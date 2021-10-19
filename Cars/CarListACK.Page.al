@@ -63,4 +63,31 @@ page 50000 "Car List ACK"
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action(Print)
+            {
+                ApplicationArea = All;
+                Caption = '&Print';
+                Ellipsis = true;
+                Image = Print;
+                PromotedCategory = Report;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+                ToolTip = 'Print this car.';
+
+                trigger OnAction()
+                var
+                    Car: Record "Car ACK";
+                begin
+                    Car.Get(Rec."No.");
+                    Car.SetRecFilter();
+                    Report.Run(Report::"Car ACK", true, false, Car);
+                end;
+            }
+        }
+    }
 }
