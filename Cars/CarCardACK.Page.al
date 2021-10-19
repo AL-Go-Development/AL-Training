@@ -25,6 +25,8 @@ page 50001 "Car Card ACK"
                     {
                         ToolTip = 'Specifies the value of the VIN field.';
                         ApplicationArea = All;
+                        ShowMandatory = true;
+                        Importance = Promoted;
                     }
                 }
                 group(Make)
@@ -34,11 +36,15 @@ page 50001 "Car Card ACK"
                     {
                         ToolTip = 'Specifies the value of the Make Code field.';
                         ApplicationArea = All;
+                        ShowMandatory = true;
+                        Importance = Promoted;
                     }
                     field("Model Code"; Rec."Model Code")
                     {
                         ToolTip = 'Specifies the value of the Model Code field.';
                         ApplicationArea = All;
+                        ShowMandatory = true;
+                        Importance = Promoted;
                     }
                 }
                 group(Properties)
@@ -48,21 +54,26 @@ page 50001 "Car Card ACK"
                     {
                         ToolTip = 'Specifies the value of the Year field.';
                         ApplicationArea = All;
+                        ShowMandatory = true;
+                        Importance = Promoted;
                     }
                     field("Body Type"; Rec."Body Type")
                     {
                         ToolTip = 'Specifies the value of the Body field.';
                         ApplicationArea = All;
+                        Importance = Additional;
                     }
                     field("Engine Type"; Rec."Engine Type")
                     {
                         ToolTip = 'Specifies the value of the Engine field.';
                         ApplicationArea = All;
+                        Importance = Additional;
                     }
                     field(Weight; Rec.Weight)
                     {
                         ToolTip = 'Specifies the value of the Model field.';
                         ApplicationArea = All;
+                        Importance = Additional;
                     }
                 }
             }
