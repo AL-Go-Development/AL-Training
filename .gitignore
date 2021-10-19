@@ -1,0 +1,6 @@
+*.app
+.vscode/launch.json
+.alcache
+.altemplates
+Translations/*.g.xlf
+rad.json

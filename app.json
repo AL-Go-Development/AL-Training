@@ -1,0 +1,30 @@
+{
+  "id": "733102ba-52b3-480a-8075-12dc15e38127",
+  "name": "Training",
+  "publisher": "AL-Go Development",
+  "version": "19.0.10000.0",
+  "brief": "Acknowledge training",
+  "description": "Acknowledge training app.",
+  "privacyStatement": "https://al-go.dev/wp-content/uploads/2021/08/PrivacyPolicy.pdf",
+  "EULA": "https://al-go.dev/wp-content/uploads/2021/08/PrivacyPolicy.pdf",
+  "help": "https://al-go.dev/docs",
+  "url": "https://al-go.dev/",
+  "logo": "Logo.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "19.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50099
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "8.0",
+  "features": ["GenerateCaptions", "TranslationFile"]
+}
